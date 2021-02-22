@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5DFE5"
+    android:orientation="vertical"
+    tools:context=".ListFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPersonName"
+            android:hint="명언 또는 작가 입력"
+            android:layout_marginTop="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/font3"
+            android:background="@color/white"
+            />
+        <Button
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            />
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="91dp"
+            android:layout_height="40dp"
+            android:text="명언작성"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/font3"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80FFFFFF"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="전체"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="MY"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="용기"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/font3"
+                android:text="자존감"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="친구"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font3"
+                android:textSize="20sp"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="94dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/font3"
+                android:text="존중·이해"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="사랑"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font3"
+                android:textSize="20sp"
+                android:background="@drawable/button"/>
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="노력"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font3"
+                android:textSize="20sp"
+                android:background="@drawable/button"/>
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="도전"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/button"/>
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="94dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="희망·가족"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font3"
+                android:textSize="20sp"
+                android:background="@drawable/button"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+</LinearLayout>

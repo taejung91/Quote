@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="폰트 변경"
+        android:textColor="@color/white"
+        android:background="#424040"
+        android:padding="20dp"
+        android:textSize="25sp"
+        />
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/font1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나눔고딕체"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/font1" />
+        <RadioButton
+            android:id="@+id/font2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="배민연성체"
+            android:textColor="@color/white"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/font2" />
+        <RadioButton
+            android:id="@+id/font3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나눔손글씨펜체"
+            android:textColor="@color/white"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:fontFamily="@font/font3"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="적용"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/border"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="취소"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/border"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
