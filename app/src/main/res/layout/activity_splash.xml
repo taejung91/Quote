@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/main2"
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font3"
+        android:text="마음을 드려요"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        android:layout_marginTop="350dp"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font3"
+        android:text="당신에게 드릴 게 없어서 \n나의 마음을 드려요"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="470dp"
+        app:layout_anchor="@+id/textView"
+        app:layout_anchorGravity="center|bottom" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

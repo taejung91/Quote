@@ -1,0 +1,4 @@
+include ':kakao-android-sdk-rx-2.3.0'
+include ':naveridlogin_android_sdk_4.2.6'
+include ':app'
+rootProject.name = "Quote"
